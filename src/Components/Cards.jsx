@@ -11,6 +11,7 @@ function Cards({ image, name, metal, price }) {
         <p className="card-price">{price}</p>
       </div>
     </div>
+    
   );
 }
 

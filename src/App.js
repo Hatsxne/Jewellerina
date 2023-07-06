@@ -6,8 +6,9 @@ import Shop from "./Components/Pages/Shop";
 // import Sale from "./Components/Pages/Sale";
 import About from "./Components/Pages/About";
 import Contact from "./Components/Pages/Contact";
-// import Reviews from "./Components/Pages/Reviews";
+import Reviews from "./Components/Pages/Reviews";
 import Navbar from "./Components/Navbar";
+
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
           {/* <Route path="/sale" element={<Sale />} /> */}
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          {/* <Route path="/reviews" element={<Reviews />} /> */}
+          <Route path="/reviews" element={<Reviews />} />
         </Routes>
       </Router>
     </>
