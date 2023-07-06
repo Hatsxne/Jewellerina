@@ -8,6 +8,7 @@ import About from "./Components/Pages/About";
 import Contact from "./Components/Pages/Contact";
 import Reviews from "./Components/Pages/Reviews";
 import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/reviews" element={<Reviews />} />
         </Routes>
+        <Footer/>
       </Router>
     </>
   );
