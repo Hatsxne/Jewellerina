@@ -1,13 +1,19 @@
 import React from "react";
 import "./Home.css";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
-  return (
+  const navigate = useNavigate();
+  return ( 
     <div className="container">
       <div className="content"></div>
-      <div className="body">"Discover The Sparkle Within"</div>
-      <div>
-        <button className="btn">Shop Now</button>
+      <div className="body-home">"Discover The Sparkle Within"</div>
+      <div className="btn-div">
+        <button className="btn" 
+        onClick={() => {
+          navigate("/shop");
+        }}
+        >Shop Now</button>
       </div>
     </div>
   );
