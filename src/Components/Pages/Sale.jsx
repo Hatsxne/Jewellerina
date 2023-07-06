@@ -1,50 +1,56 @@
 import React from "react";
 import Card from "../Cards";
-import "./Shop.css";
+import "./Sale.css";
 
-function Shop() {
+function Sale() {
   const cards = [
     {
       id: 1,
-      image: "../../Images/Bangle1.webp",
+      image: "/Images/Bangle1.webp",
       name: "Product 1",
       metal: "Yellow Gold",
-      price: "$19.99",
+      secondPrice: "$19.99",
+      price: "$17.99",
     },
     {
       id: 2,
-      image: "../../Images/Bangle2.webp",
+      image: "/Images/Bangle2.webp",
       name: "Product 2",
       metal: "Yellow Gold",
-      price: "$24.99",
+      secondPrice: "$24.99",
+      price: "$19.99",
     },
     {
       id: 3,
       image: "../../Images/Bangle3.webp",
       name: "Product 1",
       metal: "Yellow Gold",
-      price: "$19.99",
+      secondPrice: "$19.99",
+      price: "$17.99",
     },
     {
       id: 4,
       image: "../../Images/Bangle3.webp",
       name: "Product 2",
       metal: "Yellow Gold",
-      price: "$24.99",
+      secondPrice: "$24.99",
+      price: "$19.99",
     },
     {
       id: 5,
       image: "../../../Images/Bangle3.webp",
       name: "Product 1",
       metal: "Yellow Gold",
-      price: "$19.99",
+      secondPrice: "$19.99",
+      price: "$17.99",
     },
     {
       id: 6,
       image: "../../../Images/Bangle3.webp",
       name: "Product 2",
       metal: "Yellow Gold",
-      price: "$24.99",
+      secondPrice: "$24.99",
+      price: "$19.99",
     },
   ];
 
@@ -57,6 +63,7 @@ function Shop() {
             image={card.image}
             name={card.name}
             metal={card.metal}
+            secondPrice={card.secondPrice}
             price={card.price}
           />
         ))}
@@ -68,6 +75,7 @@ function Shop() {
             image={card.image}
             name={card.name}
             metal={card.metal}
+            secondPrice={card.secondPrice}
             price={card.price}
           />
         ))}
@@ -75,4 +83,4 @@ function Shop() {
     </div>
   );
 }
-export default Shop;
+export default Sale;
