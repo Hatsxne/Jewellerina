@@ -7,6 +7,7 @@
   text-align: center;
   margin: 8px;
   width: 300px;
+  width: 100%;
 }
 
 .card-container {
@@ -45,4 +46,9 @@
 .card-second-price {
   font-size: 22px;
   color: #e74141;
+}
+
+.category {
+  font-size: 1px;
+  color: #f9f9f9;
 }

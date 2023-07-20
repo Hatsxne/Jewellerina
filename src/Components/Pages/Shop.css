@@ -1,13 +1,127 @@
+/* .shop-container {
+  background-color: #fce0d4;
+}
+
+.shop-title {
+  padding-top: 30px;
+  margin-bottom: 60px;
+  font-size: 40px;
+  text-align: center;
+}
+
 .card-container {
-    background-color: #fce0d4;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(1fr);
-    gap: 10px;
-    height: 100%;
-  }
-  
-  .card-row {
-    display: flex;
-    justify-content: space-between;
-  }
+  background-color: #fce0d4;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(1fr);
+  gap: 10px;
+  height: 100%;
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.filter-container {
+  background-color: #fff;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-container h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.filter-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.filter-container input,
+.filter-container select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+Style the select dropdown
+.filter-container select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.filter-container select:focus {
+  outline: none;
+  border-color: #f78154;
+} */
+
+
+.shop-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #fce0d4;
+  padding: 20px;
+  justify-content: center;
+}
+
+.shop-title {
+  font-size: 40px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.filter-container {
+  background-color: #fff;
+  padding: 20px;
+  width: 250px;
+  height: 40vh;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-container h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.filter-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.filter-container input,
+.filter-container select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filter-container select:focus {
+  outline: none;
+  border-color: #f78154;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-items: center;
+  padding: 0 10%;
+  flex-grow: 1; /* Make the card container grow to fill the remaining space */
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+}

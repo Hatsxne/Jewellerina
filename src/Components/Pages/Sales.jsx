@@ -1,92 +1,8 @@
-// import React from "react";
-// import Card from "../Cards";
-// import "./Shop.css";
-
-// function Shop() {
-//   const cards = [
-    // {
-    //   id: 1,
-    //   image: "../../Images/Bangle1.webp",
-    //   name: "Product 1",
-    //   metal: "Yellow Gold",
-    //   price: "$2100",
-    //   category: "Barcelet"
-    // },
-    // {
-    //   id: 2,
-    //   image: "../../Images/Bangle2.webp",
-    //   name: "Product 2",
-    //   metal: "Yellow Gold",
-    //   price: "$3600",
-    //   category: "Bracelet"
-    // },
-    // {
-    //   id: 3,
-    //   image: "../../Images/Bangle3.webp",
-    //   name: "Product 3",
-    //   metal: "Yellow Gold",
-    //   price: "$3900",
-    //   category: "Ring"
-    // },
-    // {
-    //   id: 4,
-    //   image: "../../Images/Bangle3.webp",
-    //   name: "Product 4",
-    //   metal: "Yellow Gold",
-    //   price: "$3000",
-    //   category: "Necklace"
-    // },
-    // {
-    //   id: 5,
-    //   image: "../../../Images/Bangle3.webp",
-    //   name: "Product 5",
-    //   metal: "Yellow Gold",
-    //   price: "$1500",
-    //   category: "Necklace"
-    // },
-    // {
-    //   id: 6,
-    //   image: "../../../Images/Bangle3.webp",
-    //   name: "Product 6",
-    //   metal: "Yellow Gold",
-    //   price: "$2000",
-    //   category: "Earrings"
-    // },
-//   ];
-
-//   return (
-//     <div className="shop-container">
-//       <h1 class="shop-title">Shop</h1>
-//       <div
-//         className="card-container"
-//         style={{
-//           display: "grid",
-//           gridTemplateColumns: "repeat(3, 1fr)",
-//           justifyItems: "center",
-//           padding: "0 10%",
-//         }}
-//       >
-//         {cards.map((card) => (
-//           <Card
-//             key={card.id}
-//             image={card.image}
-//             name={card.name}
-//             metal={card.metal}
-//             price={card.price}
-//             category={card.category}
-//           />
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
-// export default Shop;
-
 import React, { useState } from "react";
 import Card from "../Cards";
-import "./Shop.css";
+import "./Sales.css";
 
-function Shop() {
+function Sales() {
   const initialFilters = {
     category: "",
     price: "all",
@@ -96,18 +12,20 @@ function Shop() {
   const cards = [
     {
       id: 1,
-      image: "../../Images/Bangle1.webp",
+      image: "/Images/Bangle1.webp",
       name: "Product 1",
       metal: "Yellow Gold",
-      price: "$2100",
-      category: "Bracelet"
+      secondPrice: "$1500",
+      price: "$1900",
+      category: "Ring"
     },
     {
       id: 2,
-      image: "../../Images/Bangle2.webp",
+      image: "/Images/Bangle2.webp",
       name: "Product 2",
       metal: "Yellow Gold",
-      price: "$3600",
+      secondPrice: "$1900",
+      price: "$2050",
       category: "Bracelet"
     },
     {
@@ -115,32 +33,36 @@ function Shop() {
       image: "../../Images/Bangle3.webp",
       name: "Product 3",
       metal: "Yellow Gold",
-      price: "$3900",
-      category: "Ring"
+      secondPrice: "$500",
+      price: "$800",
+      category: "Bracelet"
     },
     {
       id: 4,
       image: "../../Images/Bangle3.webp",
       name: "Product 4",
       metal: "Yellow Gold",
-      price: "$3000",
-      category: "Necklace"
+      secondPrice: "$700",
+      price: "$1100",
+      category: "Earrings"
     },
     {
       id: 5,
       image: "../../../Images/Bangle3.webp",
       name: "Product 5",
       metal: "Yellow Gold",
-      price: "$1500",
-      category: "Necklace"
+      secondPrice: "$2000",
+      price: "$2300",
+      category: "Earrings"
     },
     {
       id: 6,
       image: "../../../Images/Bangle3.webp",
       name: "Product 6",
-      metal: "Sterling Silver",
-      price: "$2000",
-      category: "Earrings"
+      metal: "Yellow Gold",
+      secondPrice: "$3750",
+      price: "$3950",
+      category: "Necklace"
     },
   ];
 
@@ -158,9 +80,9 @@ function Shop() {
       (filters.category === "" || card.category.includes(filters.category)) &&
       (filters.price === "all" ||
         (filters.price === "lowToHigh"
-          ? parseInt(card.price.slice(1)) >= 0
+          ? parseInt(card.secondPrice.slice(1)) >= 0
           : filters.price === "highToLow"
-          ? parseInt(card.price.slice(1)) >= 0
+          ? parseInt(card.secondPrice.slice(1)) >= 0
           : true)) &&
       (filters.metal === "all" || card.metal === filters.metal)
     );
@@ -249,8 +171,10 @@ function Shop() {
             image={card.image}
             name={card.name}
             metal={card.metal}
+            secondPrice={card.secondPrice}
             price={card.price}
             category={card.category}
+
           />
         ))}
       </div>
@@ -258,4 +182,85 @@ function Shop() {
   );
 }
 
-export default Shop;
+export default Sales;
+
+// function Sales() {
+  // const cards = [
+  //   {
+  //     id: 1,
+  //     image: "/Images/Bangle1.webp",
+  //     name: "Product 1",
+  //     metal: "Yellow Gold",
+  //     secondPrice: "$1500",
+  //     price: "$1900",
+  //   },
+  //   {
+  //     id: 2,
+  //     image: "/Images/Bangle2.webp",
+  //     name: "Product 2",
+  //     metal: "Yellow Gold",
+  //     secondPrice: "$1900",
+  //     price: "$2050",
+  //   },
+  //   {
+  //     id: 3,
+  //     image: "../../Images/Bangle3.webp",
+  //     name: "Product 3",
+  //     metal: "Yellow Gold",
+  //     secondPrice: "$500",
+  //     price: "$800",
+  //   },
+  //   {
+  //     id: 4,
+  //     image: "../../Images/Bangle3.webp",
+  //     name: "Product 4",
+  //     metal: "Yellow Gold",
+  //     secondPrice: "$700",
+  //     price: "$1100",
+  //   },
+  //   {
+  //     id: 5,
+  //     image: "../../../Images/Bangle3.webp",
+  //     name: "Product 5",
+  //     metal: "Yellow Gold",
+  //     secondPrice: "$200",
+  //     price: "$2300",
+  //   },
+  //   {
+  //     id: 6,
+  //     image: "../../../Images/Bangle3.webp",
+  //     name: "Product 6",
+  //     metal: "Yellow Gold",
+  //     secondPrice: "$3750",
+  //     price: "$3950",
+  //   },
+  // ];
+
+
+// //   return (
+// //     <div className="sales-container">
+// //       <h1 class="sales-title">Clearance</h1>
+// //       <div
+// //         className="card-container"
+// //         style={{
+// //           display: "grid",
+// //           gridTemplateColumns: "repeat(3, 1fr)",
+// //           justifyItems: "center",
+// //           padding: "0 10%",
+// //         }}
+// //       >
+// //         {cards.map((card) => (
+// //           <Card
+// //             key={card.id}
+// //             image={card.image}
+// //             name={card.name}
+// //             metal={card.metal}
+// //             secondPrice={card.secondPrice}
+// //             price={card.price}
+// //           />
+// //         ))}
+// //       </div>
+// //     </div>
+// //   );
+// // }
+// // export default Sales;

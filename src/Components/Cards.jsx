@@ -1,7 +1,7 @@
 import React from "react";
 import "./Cards.css";
 
-function Cards({ image, name, metal, price, secondPrice }) {
+function Cards({ image, name, metal, price, secondPrice, category }) {
   return (
     <div className="card">
       <img src={image} alt="Product" className="card-image" />
@@ -10,6 +10,7 @@ function Cards({ image, name, metal, price, secondPrice }) {
         <h4 className="metal-type">{metal}</h4>
         <p className="card-second-price">{secondPrice}</p>
         <p className="card-price">{price}</p>
+        <p className="category">{category}</p>
       </div>
     </div>
   );

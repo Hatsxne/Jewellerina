@@ -1,5 +1,4 @@
 import React from "react";
-import "../../App.css";
 import "./Contact.css";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";

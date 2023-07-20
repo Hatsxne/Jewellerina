@@ -1,34 +1,32 @@
 import React from "react";
-import "./App.css";
+//mport "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Components/Pages/Home.jsx";
 import Shop from "./Components/Pages/Shop";
-import Sale from "./Components/Pages/Sale";
+import Sales from "./Components/Pages/Sales";
 import About from "./Components/Pages/About";
 import Contact from "./Components/Pages/Contact";
 import Reviews from "./Components/Pages/Reviews";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 
-
 function App() {
   return (
     <>
       <Router>
-        <Navbar/>
+        <Navbar />
         <Routes>
           <Route path="/" exact element={<Home />} />
-          <Route path="/shop" element={<Shop />} />
-          <Route path="/sale" element={<Sale />} />
           <Route path="/about" element={<About />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/sales" element={<Sales />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/reviews" element={<Reviews />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </Router>
     </>
   );
 }
 
 export default App;
- 

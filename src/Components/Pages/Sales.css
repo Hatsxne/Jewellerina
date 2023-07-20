@@ -1,0 +1,24 @@
+.sales-container {
+  background-color: #fce0d4;
+}
+
+.sales-title {
+  padding-top: 30px;
+  margin-bottom: 60px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.card-container {
+  background-color: #fce0d4;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(1fr);
+  gap: 10px;
+  height: 100%;
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+}
