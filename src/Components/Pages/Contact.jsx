@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function ContactUs() {
   return (
     <div className="full-container">
-      <h2 className="contact-header">Loaction and Details </h2>
+      <h2 className="contact-header">Location and Details </h2>
       <Container className="contact-container">
         <Row>
           <Col className="map">
@@ -34,7 +34,7 @@ export default function ContactUs() {
             <p className="hours-details-text">
               Weekdays: <br />
               5:00am-12:00am <br />
-              Weekdends: <br />
+              Weekends: <br />
               6:00am-10:00am
             </p>
           </Col>
