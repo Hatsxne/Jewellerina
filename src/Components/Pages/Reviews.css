@@ -1,6 +1,6 @@
 .reviews-container {
   background-color: #fce0d4;
-  height: 140vh;
+  height: 155vh;
 }
 
 .quote-title {
@@ -29,7 +29,7 @@
   padding-bottom: 30px;
 }
 
-img {
+img.star {
   width: 150px;
   height: 30px;
   margin-bottom: 15px;

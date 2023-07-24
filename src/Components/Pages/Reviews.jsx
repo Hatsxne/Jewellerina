@@ -7,7 +7,7 @@ function Reviews() {
       <h1 class="quote-title">Customers' Reviews</h1>
       <div class="quote">
         <h5 class="quote-header">Moe Bayaa</h5>
-        <img src="five-star.png" alt="stars" />
+        <img className="star" src="five-star.png" alt="stars" />
         <p class="quote-desc">
             "I recently purchased a stunning engagement ring from Jewellerina, and I couldn't be happier with my experience. 
             The staff was incredibly knowledgeable and took the time to guide me through their extensive collection. 
@@ -17,7 +17,7 @@ function Reviews() {
       </div>
       <div class="quote">
         <h5 class="quote-header">Sarah Lee</h5>
-        <img src="five-star.png" alt="stars" />
+        <img className="star" src="five-star.png" alt="stars" />
         <p class="quote-desc">
           "I cannot speak highly enough of Jewellerina. 
             The moment I walked into their store, I was greeted with warmth and genuine interest in helping me find the perfect piece of jewelry. 
@@ -28,7 +28,7 @@ function Reviews() {
       </div>
       <div class="quote">
         <h5 class="quote-header">Scott Hamilton</h5>
-        <img src="five-star.png" alt="stars" />
+        <img className="star" src="five-star.png" alt="stars" />
         <p class="quote-desc">
            "I recently had a custom-made bracelet created by the talented artisans at Jewellerina. 
             The whole process was seamless, from the initial design consultation to the final product. 
@@ -38,7 +38,7 @@ function Reviews() {
       </div>
       <div class="quote">
         <h5 class="quote-header">Maria Kim</h5>
-        <img src="five-star.png" alt="stars" />
+        <img className="star" src="five-star.png" alt="stars" />
         <p class="quote-desc">
             "Jewellerina is my go-to jewelry store for all my special occasions. 
             Their collection is simply breathtaking, and their staff is incredibly friendly and knowledgeable. 

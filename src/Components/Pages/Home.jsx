@@ -6,7 +6,13 @@ function Home() {
   const navigate = useNavigate();
   return (
     <div>
-      <div className="content"></div>
+      <div className="content">
+        <img
+          className="home-img"
+          src={"/Images/Homepic.jpg"}
+          alt="Sparkle within"
+        />
+      </div>
       <div className="body-home">"Discover The Sparkle Within"</div>
       <div className="btn-div">
         <button

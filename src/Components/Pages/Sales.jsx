@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Card from "../Cards";
 import "./Sales.css";
 
+
 function Sales() {
   const initialFilters = {
     category: "",
@@ -12,57 +13,69 @@ function Sales() {
   const cards = [
     {
       id: 1,
-      image: "/Images/Bangle1.webp",
-      name: "Product 1",
+      image: "/Images/Ring.webp",
+      name: "Jewellerina Knot",
       metal: "Yellow Gold",
-      secondPrice: "$1500",
-      price: "$1900",
-      category: "Ring"
+      secondPrice: "Now $1500",
+      price: " Was $1900",
+      category: "Ring",
+      description: "Double Row Hinged Ring",
+      detailedDescription: `The entwined ends of Jewellerina Knots signature motif symbolize the power of connections between people. Balancing strength and elegance, each Jewellerina Knot design is a complex feat of craftsmanship. This bangle is crafted with yellow gold and polished by hand for high shine. Wear on its own or partnered with classic silhouettes for an unexpected pairing.`,
     },
     {
       id: 2,
       image: "/Images/Bangle2.webp",
-      name: "Product 2",
+      name: "Bangle",
       metal: "Yellow Gold",
-      secondPrice: "$1900",
-      price: "$2050",
-      category: "Bracelet"
+      secondPrice: "Now $1900",
+      price: "Was $2050",
+      category: "Bracelet",
+      description: "Jewellerina Lock",
+      detailedDescription: `Inspired by the power of togetherness and inclusivity, Tiffany Lock is a bold and visual statement about the personal bonds that make us who we are. Designed to be worn by all genders, the Tiffany Lock bangle features an innovative clasp that echoes the functionality of a padlock, an important motif from The Tiffany Archives. This style is expertly crafted in 18k yellow and white gold.`,
     },
     {
       id: 3,
-      image: "../../Images/Bangle3.webp",
-      name: "Product 3",
+      image: "../../Images/Bangle1.webp",
+      name: "Bangle",
       metal: "Yellow Gold",
-      secondPrice: "$500",
-      price: "$800",
-      category: "Bracelet"
+      secondPrice: "Now $500",
+      price: "Was $800",
+      category: "Bracelet",
+      description: "Jewellerina Lock",
+      detailedDescription: `Inspired by the power of togetherness and inclusivity, Tiffany Lock is a bold and visual statement about the personal bonds that make us who we are. Designed to be worn by all genders, the Tiffany Lock bangle features an innovative clasp that echoes the functionality of a padlock, an important motif from The Tiffany Archives. This style is expertly crafted in 18k yellow gold.`,
     },
     {
       id: 4,
-      image: "../../Images/Bangle3.webp",
-      name: "Product 4",
+      image: "../../Images/Earrings1.webp",
+      name: "Jewllerina T",
       metal: "Yellow Gold",
-      secondPrice: "$700",
-      price: "$1100",
-      category: "Earrings"
+      secondPrice: "Now $700",
+      price: "Was $1100",
+      category: "Earrings",
+      description: "T1 Hoop Earrings",
+      detailedDescription: `Tiffany T1 designs reinvent our iconic Tiffany T collection with bold details and dimension. These 18k yellow gold hoop earrings are precisely crafted with a beveled edge to bring out the striking profile. Whether worn alone or with a mix of stud earrings for an unexpected look, they make a perfect finishing touch.`,
     },
     {
       id: 5,
-      image: "../../../Images/Bangle3.webp",
-      name: "Product 5",
+      image: "../../../Images/Earrings2.webp",
+      name: "Love Link",
       metal: "Yellow Gold",
-      secondPrice: "$2000",
-      price: "$2300",
-      category: "Earrings"
+      secondPrice: "Now $2000",
+      price: "Was $2300",
+      category: "Earrings",
+      description: "Large Link Earrings",
+      detailedDescription: `Tiffany HardWear is elegantly subversive and captures the spirit of the women of New York City. A bold chain of gauge links captures the urban edge of the city, making a stunning statement.`,
     },
     {
       id: 6,
-      image: "../../../Images/Bangle3.webp",
-      name: "Product 6",
+      image: "../../../Images/Necklace1.webp",
+      name: "Jewellerina's Hardware",
       metal: "Yellow Gold",
-      secondPrice: "$3750",
-      price: "$3950",
-      category: "Necklace"
+      secondPrice: "Now $3750",
+      price: "Was $3950",
+      category: "Necklace",
+      description: "Medium Link Necklace",
+      detailedDescription: `Tiffany HardWear is elegantly subversive and captures the spirit of the women of New York City. A bold chain of gauge links captures the urban edge of the city, making a stunning statement.`,
     },
   ];
 
@@ -113,6 +126,8 @@ function Sales() {
   filteredCards.sort(comparePrices);
 
   return (
+  <div>
+    <h2 className="sales-title">Sales </h2>
     <div className="shop-container">
       <div className="filter-container">
         <h3>Filter Options:</h3>
@@ -174,11 +189,14 @@ function Sales() {
             secondPrice={card.secondPrice}
             price={card.price}
             category={card.category}
+            description={card.description}
+            detailedDescription={card.detailedDescription}
 
           />
         ))}
       </div>
     </div>
+  </div>
   );
 }
 

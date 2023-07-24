@@ -1,0 +1,25 @@
+.info-container {
+  background-color: #fce0d4;
+}
+
+.information-header {
+  background-color: #fce0d4;
+  display: flex;
+  padding: 125px;
+  font-size: 50px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-container {
+  background-color: #fce0d4;
+}
+
+.row-one {
+  margin-bottom: 50px;
+}
+
+.row-two {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

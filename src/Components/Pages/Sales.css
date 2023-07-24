@@ -4,9 +4,10 @@
 
 .sales-title {
   padding-top: 30px;
-  margin-bottom: 60px;
+  padding-bottom: 30px;
   font-size: 40px;
   text-align: center;
+  background-color: #fce0d4;
 }
 
 .card-container {
